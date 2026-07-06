@@ -114,7 +114,7 @@ Heart-Disease-Prediction/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Rabisankar1/Heart-Disease-Prediction.git
 ```
 
 ### 2. Move into the Project Folder
