@@ -1,5 +1,12 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python">
+  <img src="https://img.shields.io/badge/Machine%20Learning-KNN-orange">
+  <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B?logo=streamlit">
+  <img src="https://img.shields.io/badge/Status-Active-success">
+</p>
+
 A Machine Learning-based web application that predicts the risk of **heart disease** based on user-provided medical information.
 
 The project uses a **K-Nearest Neighbors (KNN)** classification model and provides an interactive web interface built with **Streamlit**.
@@ -14,6 +21,7 @@ The complete workflow includes:
 
 - Data preprocessing and cleaning
 - Exploratory Data Analysis
+Tell me w
 - Categorical feature encoding
 - Feature scaling
 - Machine Learning model training
@@ -22,6 +30,14 @@ The complete workflow includes:
 - Building an interactive Streamlit web application
 
 ---
+
+## 🖥️ Application Preview
+
+<p align="center">
+  <img src="assets/app_preview.png"
+       alt="Heart Disease Prediction App"
+       width="500">
+</p>
 
 ## 🚀 Features
 
@@ -48,6 +64,34 @@ The trained project components are stored as:
 These saved files allow the Streamlit application to make predictions without retraining the model every time.
 
 ---
+
+## 📊 Model Performance
+
+The model was evaluated on unseen test data using standard classification metrics.
+
+| Metric | Score |
+|---|---:|
+| Accuracy | Add actual value |
+| Precision | Add actual value |
+| Recall | Add actual value |
+| F1 Score | Add actual value |
+
+> Note: Performance values are calculated on the test dataset.
+
+## 📚 Dataset Information
+
+The dataset contains clinical and health-related attributes used for binary heart disease classification.
+
+- **Task:** Binary Classification
+- **Target Variable:** `HeartDisease`
+- **Number of Input Features:** 11
+- **Number of Records:** Add actual value
+- **Dataset Source:** Add actual source
+
+### Target Classes
+
+- `0` — Negative class
+- `1` — Positive class
 
 ## 📊 Input Features
 
@@ -88,12 +132,16 @@ The application collects the following information:
 ```text
 Heart-Disease-Prediction/
 │
+├── assets/
+│   └── app_preview.png
+│
 ├── HeartDisease.ipynb
 ├── app.py
 ├── heart_columns.pkl
 ├── heart_scaler.pkl
 ├── knn_heart_model.pkl
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -126,7 +174,7 @@ cd Heart-Disease-Prediction
 ### 3. Install Required Dependencies
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Run the Streamlit Application
@@ -162,15 +210,14 @@ The application provides one of two results:
 
 ## 🔮 Future Improvements
 
-- Improve the Streamlit UI/UX
-- Compare multiple Machine Learning algorithms
+- Compare KNN with Logistic Regression, SVM and Random Forest
+- Add cross-validation and hyperparameter tuning
 - Add prediction probability visualization
-- Add model performance charts
-- Deploy the application online
-- Add responsive dashboard design
+- Add confusion matrix and ROC curve
+- Build a unified Scikit-learn preprocessing pipeline
 - Improve model explainability
-- Add feature importance analysis where supported
-
+- Deploy the application online
+- Add automated testing with GitHub Actions
 ---
 
 ## ⚠️ Disclaimer
